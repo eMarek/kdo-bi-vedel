@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "topic": "EXAMPLE",
+    "question": "This is and example question. Select correct answer.",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Answer 1",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answer": "Answer 2"
+      },
+      {
+        "id": 3,
+        "answer": "Answer 3"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "topic": "ZAKONODAJA",
+    "question": "Na svetu je kar nekaj nenavadnih zakonskih ureditev, nekatere so tudi absurdne. Ena od naštetih ne drži, katera?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "V Londonu je taksistom prepovedano prevažati napadalne pse in trupla."
+      },
+      {
+        "id": 2,
+        "answer": "V Franciji je prašiča prepovedano poimenovati Julij Cezar.",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answer": "V St. Louisu v Misuriju je nezakonito, če gasilec reši žensko, ki je oblečena v spalno srajco."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "topic": "DAVČNA",
+    "question": "V kateri državi ni protizakonito, če davčnemu revizorju ne poveš tega kar smatraš, da mu ni potrebno vedeti?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Srbija"
+      },
+      {
+        "id": 2,
+        "answer": "Velika Britanija",
+        "isCorrect": true
+      },
+      {
+        "id": 3,
+        "answer": "Egipt"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "topic": "VRTNARSTVO",
+    "question": "Dobri vrtnarji se razlikujejo od slabih po kvaliteti pridelka. Dober pridelek je odvisen od različnih pogojev. Da ti bodo buče dobro uspele:",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Jih moraš saditi z njeno dobro sosedo, in sicer so to kumare."
+      },
+      {
+        "id": 2,
+        "answer": "Jih moraš saditi ponoči ob polni luni."
+      },
+      {
+        "id": 3,
+        "answer": "Jih moraš saditi, ko se zemlja ogreje nad 15°C.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "topic": "?",
+    "question": "This is final question. Which one do you think it is correct?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Answer 1"
+      },
+      {
+        "id": 2,
+        "answer": "Answer 2"
+      },
+      {
+        "id": 3,
+        "answer": "Answer 3",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "topic": "ZAČIMBE",
+    "question": "Vsaka prava kuharica uporablja tudi začimbe. Uporaba začimbe in odnos do njih se med različnimi kulturami zelo razlikuje:",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Stari grki in rimljni so bili mnenja, da bazilika raste samo, če nanjo kričiš med sejanjem.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answer": "Poper so nekoč uporabljaji za plačevanje davkov."
+      },
+      {
+        "id": 3,
+        "answer": "Če si na Danskem neporočen na 20. rojstni dan, te lahko prijatelji posipajo s cimetom."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "topic": "FILMI",
+    "question": "Nekateri filmi nastanejo po knjižnjih uspešnicah, nekateri pač ne. Od naštetih trditvah je le ena pravilna. Katera?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Harry-jeva sova Hedwig, je živela 6 knjig in pol.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answer": "Gospodar prstanov je bil sneman na Greenlandiji."
+      },
+      {
+        "id": 3,
+        "answer": "Ladja Jacka Sparrowa se imenuje Črn Rubin."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "topic": "MEME",
+    "question": "Is it funny...",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "Maybe?"
+      },
+      {
+        "id": 2,
+        "answer": "No."
+      },
+      {
+        "id": 3,
+        "answer": "Yes!",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "topic": "DOMAČE ŽIVALI",
+    "question": "Psi so najbolj priljubljna domača žival. Na internetu pa obstaja mnogi resničnih in napačnih dejstev. Izberi napačno trditev.",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "V Minnesoti so psa izvolili za župana."
+      },
+      {
+        "id": 3,
+        "answer": "Psi se slinijo, ker so neprestano lačni.",
+        "isCorrect": true
+      },
+      {
+        "id": 2,
+        "answer": "Psi lahko slišijo 4x dlje kot ljudje."
+      }
+    ]
+  }
+]

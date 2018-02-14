@@ -1,0 +1,105 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+}
+
+.topic {
+  margin: 20px;
+  width: 26%;
+  height: 200px;
+  line-height: 200px;
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+.topic:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.topic--correct-answer {
+  background-color: rgb(98, 209, 98);
+}
+
+.topic--wrong-answer {
+  background-color: rgb(231, 99, 99);
+}
+
+.selectedQuestion {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  /* width: 100%; */
+  height: 100%;
+  background-color: white;
+  padding: 30px;
+}
+
+.selectedQuestion__close {
+  text-align: right;
+}
+
+.selectedQuestion__close span {
+  padding: 20px;
+  display: inline-block;
+  border: 1px solid transparent;  
+}
+
+.selectedQuestion__close span:hover {
+  border: 1px solid black;
+  background-color: #e4e4e4;
+  display: inline-block;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.selectedQuestion__topic {
+  font-weight: bold;
+}
+
+.selectedQuestion__question {
+  font-size: 36px;
+}
+
+.selectedQuestion__answer {
+  padding: 20px 10px;
+  margin: 10px;
+  border: 1px solid transparent;
+}
+
+.selectedQuestion__answer:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.selectedQuestion__answer--seleceted {
+  background-color: orange;
+}
+
+.selectedQuestion__answer--correct {
+  background-color: rgb(98, 209, 98);
+}
+
+.selectedQuestion__showAnswerBtn {
+  margin-top: 20px;
+  border: 1px solid black;
+  background-color: #e4e4e4;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 15px 30px;
+}
+
+.selectedQuestion__showAnswerBtn:hover {
+  color: white;
+  background-color: #373737;
+  cursor: pointer;
+}
