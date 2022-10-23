@@ -1,7 +1,5 @@
-// @flow
-
 import React, { Component } from 'react'
-import type { QuestionType, AnswerType, SelectedAnswerType } from '../types/QuestionsType'
+import { QuestionType, AnswerType, SelectedAnswerType } from '../types/QuestionsType'
 import styled from 'styled-components'
 import { DefaultTheme } from '../Style'
 
@@ -43,11 +41,11 @@ const QuestionStyled = styled.div`
   font-size: 36px;
 `
 
-const AnswerStyled = styled.div`
+const AnswerStyled = styled.div<{ backgroundColor: string }>`
   padding: 20px 10px;
   margin: 10px;
   border: 1px solid transparent;
-  background-color: ${props => props.backgroundColor}
+  background-color: ${props => props.backgroundColor};
   color: ${props => props.backgroundColor === DefaultTheme.SELECTED_COLOR ? '#ffffff' : 'inherit'};
 
   &:hover {
@@ -71,7 +69,7 @@ const BtnBottomStyled = styled.div`
   }
 `
 
-const PhotoFrameStyled = styled.div`
+const PhotoFrameStyled = styled.div<{ backgroundImage?: string }>`
   width: 100%;
   height: 100%;
   background-color: #000000;
@@ -119,8 +117,8 @@ class Question extends Component<QuestionProps, QuestionState> {
       }
     }
 
-    return <AnswerStyled key={ answer.id } onClick={ () => this.props.selectAnswer(answer) } backgroundColor={ backgroundColor }>
-      { answer.answer }
+    return <AnswerStyled key={answer.id} onClick={() => this.props.selectAnswer(answer)} backgroundColor={backgroundColor}>
+      {answer.answer}
     </AnswerStyled>
   }
 
@@ -135,19 +133,19 @@ class Question extends Component<QuestionProps, QuestionState> {
     const { isClosedQuestion, selectedQuestion } = this.props
     const { topic, question, answers, photo } = selectedQuestion
     if (photoDisplayed) {
-      return <PhotoFrameStyled onClick={ this.togglePhoto } backgroundImage={ photo }></PhotoFrameStyled>
+      return <PhotoFrameStyled onClick={this.togglePhoto} backgroundImage={photo}></PhotoFrameStyled>
     }
     return <SelectedQuestionStyled>
-      <BtnCloseStyled onClick={ this.props.handleClose }>
+      <BtnCloseStyled onClick={this.props.handleClose}>
         <span>Zapri</span>
       </BtnCloseStyled>
-      <TopicStyled>{ topic }</TopicStyled>
+      <TopicStyled>{topic}</TopicStyled>
       <hr />
-      <QuestionStyled>{ question }</QuestionStyled>
+      <QuestionStyled>{question}</QuestionStyled>
       <hr />
-      <div>{ answers.map( this.renderAnswer ) }</div>
-      { !isClosedQuestion && <BtnBottomStyled onClick={ this.props.showCorrectAnswer }>Pokaži odgovor</BtnBottomStyled> }
-      { isClosedQuestion && photo && <BtnBottomStyled onClick={ this.togglePhoto }>Pokaži sliko</BtnBottomStyled> }
+      <div>{answers.map(this.renderAnswer)}</div>
+      {!isClosedQuestion && <BtnBottomStyled onClick={this.props.showCorrectAnswer}>Pokaži odgovor</BtnBottomStyled>}
+      {isClosedQuestion && photo && <BtnBottomStyled onClick={this.togglePhoto}>Pokaži sliko</BtnBottomStyled>}
     </SelectedQuestionStyled>
   }
 }

@@ -1,13 +1,11 @@
-// @flow
-
 import React, { Component } from 'react'
-import questions from '../mocks/questions'
-import type { QuestionType, AnswerType, SelectedAnswerType } from '../types/QuestionsType'
+import questions from '../mocks/questions.json'
+import { QuestionType, AnswerType, SelectedAnswerType } from '../types/QuestionsType'
 import Question from './Question'
 import styled from 'styled-components'
 import { DefaultTheme } from '../Style'
 
-const TopicStyled = styled.div`
+const TopicStyled = styled.div<{ backgroundColor: string }>`
   margin: 20px;
   width: 26%;
   height: 200px;
@@ -25,7 +23,7 @@ const TopicStyled = styled.div`
 type TopicsProps = {}
 
 type TopicsState = {
-  selectedQuestion: ?QuestionType,
+  selectedQuestion: QuestionType | null,
   allSelectedAnswers: Array<SelectedAnswerType>,
   closedQuestions: Array<number>
 }
@@ -103,7 +101,7 @@ class Topics extends Component<TopicsProps, TopicsState> {
       }
     }
 
-    return <TopicStyled key={ question.id } onClick={ () => this.showQuestion(question) } backgroundColor={ backgroundColor}>{ question.topic }</TopicStyled>
+    return <TopicStyled key={question.id} onClick={() => this.showQuestion(question)} backgroundColor={backgroundColor}>{question.topic}</TopicStyled>
   }
 
   render() {
@@ -114,12 +112,12 @@ class Topics extends Component<TopicsProps, TopicsState> {
     const selectedAnswers = allSelectedAnswers.filter(selectedAnswer => selectedAnswer.questionId === selectedQuestion.id)
     const isClosedQuestion = Boolean(closedQuestions.includes(selectedQuestion.id))
     return <Question
-      selectedQuestion={ selectedQuestion }
-      selectedAnswers={ selectedAnswers }
-      handleClose={ this.hideQuestion }
-      selectAnswer={ this.handleSelectedAnswer }
-      showCorrectAnswer={ this.handleCloseQuestion }
-      isClosedQuestion={ isClosedQuestion }
+      selectedQuestion={selectedQuestion}
+      selectedAnswers={selectedAnswers}
+      handleClose={this.hideQuestion}
+      selectAnswer={this.handleSelectedAnswer}
+      showCorrectAnswer={this.handleCloseQuestion}
+      isClosedQuestion={isClosedQuestion}
     />
   }
 }

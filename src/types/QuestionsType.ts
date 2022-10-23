@@ -1,7 +1,5 @@
-// @flow
-
 export type QuestionType = {
-  id: 1,
+  id: number,
   topic: string,
   question: string,
   answers: Array<AnswerType>,
@@ -9,7 +7,7 @@ export type QuestionType = {
 }
 
 export type AnswerType = {
-  id: 2,
+  id: number,
   answer: string,
   isCorrect?: boolean
 }
