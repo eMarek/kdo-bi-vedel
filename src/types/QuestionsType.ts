@@ -9,7 +9,8 @@ export type QuestionType = {
 export type AnswerType = {
   id: number,
   answer: string,
-  isCorrect?: boolean
+  isCorrect?: boolean,
+  photos?: Array<string>,
 }
 
 export type SelectedAnswerType = {

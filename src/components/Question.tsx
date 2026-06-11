@@ -45,6 +45,7 @@ const AnswerStyled = styled.div<{ backgroundColor: string }>`
   padding: 20px 10px;
   margin: 10px;
   border: 1px solid transparent;
+  position: relative;
   background-color: ${props => props.backgroundColor};
   color: ${props => props.backgroundColor === DefaultTheme.SELECTED_COLOR ? '#ffffff' : 'inherit'};
 
@@ -61,6 +62,34 @@ const BtnBottomStyled = styled.div`
   display: inline-block;
   border-radius: 20px;
   padding: 15px 30px;
+
+  &:hover {
+    color: white;
+    background-color: #373737;
+    cursor: pointer;
+  }
+`
+
+const BtnPhotosStyled = styled.div`
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+`
+
+const BtnPhotoStyled = styled.div`
+  border: 1px solid black;
+  background-color: #e4e4e4;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: black;
+  font-size: 24px;
 
   &:hover {
     color: white;
@@ -90,12 +119,12 @@ type QuestionProps = {
 }
 
 type QuestionState = {
-  photoDisplayed: boolean
+  photoDisplayed: string | null
 }
 
 class Question extends Component<QuestionProps, QuestionState> {
   state: QuestionState = {
-    photoDisplayed: false
+    photoDisplayed: null
   }
 
   renderAnswer = (answer: AnswerType) => {
@@ -119,13 +148,28 @@ class Question extends Component<QuestionProps, QuestionState> {
 
     return <AnswerStyled key={answer.id} onClick={() => this.props.selectAnswer(answer)} backgroundColor={backgroundColor}>
       {answer.answer}
+      {answer.photos && answer.photos.length > 0 && isClosedQuestion && <BtnPhotosStyled>
+        {answer.photos.map((photo, index) => <BtnPhotoStyled key={index} onClick={(event) => this.togglePhoto(event, photo)}>
+          {answer.photos?.length === 1 ? "Slika" : `Slika ${index + 1}`}
+        </BtnPhotoStyled>)}
+      </BtnPhotosStyled>}
     </AnswerStyled>
   }
 
-  togglePhoto = () => {
-    this.setState(oldState => ({
-      photoDisplayed: !oldState.photoDisplayed
-    }))
+  closePhoto = () => {
+    this.setState({
+      photoDisplayed: null
+    })
+  }
+
+  togglePhoto = (event: React.MouseEvent<HTMLDivElement>, photo?: string) => {
+    event.stopPropagation();
+    if (!photo) {
+      return
+    }
+    this.setState({
+      photoDisplayed: photo
+    })
   }
 
   render() {
@@ -133,19 +177,21 @@ class Question extends Component<QuestionProps, QuestionState> {
     const { isClosedQuestion, selectedQuestion } = this.props
     const { topic, question, answers, photo } = selectedQuestion
     if (photoDisplayed) {
-      return <PhotoFrameStyled onClick={this.togglePhoto} backgroundImage={photo}></PhotoFrameStyled>
+      return <PhotoFrameStyled onClick={this.closePhoto} backgroundImage={photoDisplayed}></PhotoFrameStyled>
     }
     return <SelectedQuestionStyled>
       <BtnCloseStyled onClick={this.props.handleClose}>
         <span>Zapri</span>
       </BtnCloseStyled>
-      <TopicStyled>{topic}</TopicStyled>
+      <TopicStyled>
+        {topic}
+        {photo && <BtnPhotoStyled style={{marginLeft: "20px"}} onClick={(event) => this.togglePhoto(event, photo)}>Slika</BtnPhotoStyled>}
+      </TopicStyled>
       <hr />
       <QuestionStyled>{question}</QuestionStyled>
       <hr />
       <div>{answers.map(this.renderAnswer)}</div>
       {!isClosedQuestion && <BtnBottomStyled onClick={this.props.showCorrectAnswer}>Pokaži odgovor</BtnBottomStyled>}
-      {isClosedQuestion && photo && <BtnBottomStyled onClick={this.togglePhoto}>Pokaži sliko</BtnBottomStyled>}
     </SelectedQuestionStyled>
   }
 }
