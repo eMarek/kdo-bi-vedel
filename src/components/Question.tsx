@@ -109,6 +109,21 @@ const PhotoFrameStyled = styled.div<{ backgroundImage?: string }>`
   background-size: contain;
 `
 
+const VideoFrameStyled = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > video {
+    max-width: 100%;
+    max-height: 100%;
+  }
+`
+
 type QuestionProps = {
   selectedQuestion: QuestionType,
   selectedAnswers: Array<SelectedAnswerType>,
@@ -119,12 +134,14 @@ type QuestionProps = {
 }
 
 type QuestionState = {
-  photoDisplayed: string | null
+  photoDisplayed: string | null,
+  videoDisplayed: string | null
 }
 
 class Question extends Component<QuestionProps, QuestionState> {
   state: QuestionState = {
-    photoDisplayed: null
+    photoDisplayed: null,
+    videoDisplayed: null
   }
 
   renderAnswer = (answer: AnswerType) => {
@@ -146,11 +163,17 @@ class Question extends Component<QuestionProps, QuestionState> {
       }
     }
 
+    const hasPhotos = answer.photos && answer.photos.length > 0
+    const hasVideos = answer.videos && answer.videos.length > 0
+
     return <AnswerStyled key={answer.id} onClick={() => this.props.selectAnswer(answer)} backgroundColor={backgroundColor}>
       {answer.answer}
-      {answer.photos && answer.photos.length > 0 && isClosedQuestion && <BtnPhotosStyled>
-        {answer.photos.map((photo, index) => <BtnPhotoStyled key={index} onClick={(event) => this.togglePhoto(event, photo)}>
+      {(hasPhotos || hasVideos) && isClosedQuestion && <BtnPhotosStyled>
+        {answer.photos?.map((photo, index) => <BtnPhotoStyled key={`photo-${index}`} onClick={(event) => this.togglePhoto(event, photo)}>
           {answer.photos?.length === 1 ? "Slika" : `Slika ${index + 1}`}
+        </BtnPhotoStyled>)}
+        {answer.videos?.map((video, index) => <BtnPhotoStyled key={`video-${index}`} onClick={(event) => this.toggleVideo(event, video)}>
+          {answer.videos?.length === 1 ? "Video" : `Video ${index + 1}`}
         </BtnPhotoStyled>)}
       </BtnPhotosStyled>}
     </AnswerStyled>
@@ -172,12 +195,33 @@ class Question extends Component<QuestionProps, QuestionState> {
     })
   }
 
+  closeVideo = () => {
+    this.setState({
+      videoDisplayed: null
+    })
+  }
+
+  toggleVideo = (event: React.MouseEvent<HTMLDivElement>, video?: string) => {
+    event.stopPropagation();
+    if (!video) {
+      return
+    }
+    this.setState({
+      videoDisplayed: video
+    })
+  }
+
   render() {
-    const { photoDisplayed } = this.state
+    const { photoDisplayed, videoDisplayed } = this.state
     const { isClosedQuestion, selectedQuestion } = this.props
-    const { topic, question, answers, photo } = selectedQuestion
+    const { topic, question, answers, photos } = selectedQuestion
     if (photoDisplayed) {
       return <PhotoFrameStyled onClick={this.closePhoto} backgroundImage={photoDisplayed}></PhotoFrameStyled>
+    }
+    if (videoDisplayed) {
+      return <VideoFrameStyled onClick={this.closeVideo}>
+        <video src={videoDisplayed} controls autoPlay />
+      </VideoFrameStyled>
     }
     return <SelectedQuestionStyled>
       <BtnCloseStyled onClick={this.props.handleClose}>
@@ -185,7 +229,9 @@ class Question extends Component<QuestionProps, QuestionState> {
       </BtnCloseStyled>
       <TopicStyled>
         {topic}
-        {photo && <BtnPhotoStyled style={{marginLeft: "20px"}} onClick={(event) => this.togglePhoto(event, photo)}>Slika</BtnPhotoStyled>}
+        {photos?.map((photo, index) => <BtnPhotoStyled key={index} style={{marginLeft: "20px"}} onClick={(event) => this.togglePhoto(event, photo)}>
+          {photos.length === 1 ? "Slika" : `Slika ${index + 1}`}
+        </BtnPhotoStyled>)}
       </TopicStyled>
       <hr />
       <QuestionStyled>{question}</QuestionStyled>

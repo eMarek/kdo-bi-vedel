@@ -1,190 +1,250 @@
 [
   {
     "id": 1,
-    "topic": "Topic 1",
-    "question": "Question 1?",
-    "photo": "photos/photo-1.jpg",
+    "topic": "Popolna kombinacija",
+    "question": "Recept za pravo zabavo sestavljajo lokacija, glasba in dobra družba, s katero kaj poješ, spiješ in zaplešeš. Po analizi \"Ministrstva za zabavo\" so popolna kombinacija:",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1",
-        "isCorrect": true
+        "answer": "Hribi + Gorenska ljubljena (Fehtarji) + Meso na žaru",
+        "photos": [
+          "photos/PXL_20260427_131825477.jpg"
+        ]
       },
       {
         "id": 2,
-        "answer": "Answer 2"
+        "answer": "Zidanca + Satisfaction (Benny Benassi) + Disco fox",
+        "videos": [
+          "photos/25042009063.mp4"
+        ],
+        "isCorrect": true
       },
       {
         "id": 3,
-        "answer": "Answer 3"
+        "answer": "Morje + Kupit ću nam sat (Željko Bebek) + Hladno pivo",
+        "photos": [
+          "photos/IMG_20240629_125008.jpg"
+        ]
       }
     ]
   },
   {
     "id": 2,
-    "topic": "Topic 2",
-    "question": "Question 2?",
-    "photo": "photos/photo-2.jpg",
+    "topic": "Tvoji hobiji",
+    "question": "Odbojka ti je veliko več kot samo hobi. Je del tebe in tvojega življenja. Pravi profesionalec si tudi pri drugih hobijih. Pri katerem izmed naslednjih hobijev si najbolj uspešen?",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
-      },
-      {
-        "id": 2,
-        "answer": "Answer 2",
+        "answer": "Iskanje lukenj v zakonu",
+        "photos": [
+          "photos/PXL_20260426_102716559.jpg"
+        ],
         "isCorrect": true
       },
       {
+        "id": 2,
+        "answer": "Igranje mini golfa",
+        "photos": [
+          "photos/DSC01765.JPG",
+          "photos/DSC06584.JPG"
+        ]
+      },
+      {
         "id": 3,
-        "answer": "Answer 3"
+        "answer": "Tek v bazenu, disciplina: globoka voda"
       }
     ]
   },
   {
     "id": 3,
-    "topic": "Topic 3",
-    "question": "Question 3?",
-    "photo": "photos/photo-3.jpg",
+    "topic": "Lasna katastrofa",
+    "question": "Zgodilo se je, da si od frizerja prišel v joku. Pričeska ni uspela. Sveto delo je bilo uničeno. Skratka, svoje lase si ščitil vedno in povsod. Tragikomičen vrhunec svojih las si doživel:",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1",
-        "isCorrect": true
+        "answer": "Zaradi nošenja plavalne kape, ki je v Italiji obvezno"
       },
       {
         "id": 2,
-        "answer": "Answer 2"
+        "answer": "Ko si šel po pretepu na urgenco",
+        "isCorrect": true
       },
       {
         "id": 3,
-        "answer": "Answer 3"
+        "answer": "Ker si svojo glavo zaščitil s spodnjicami",
+        "photos": [
+          "photos/DSC04052.JPG"
+        ]
       }
     ]
   },
   {
     "id": 4,
-    "topic": "Topic 4",
-    "question": "Question 4?",
-    "photo": "photos/photo-4.jpg",
+    "topic": "Naj smrkavec",
+    "question": "Le redki izbranci so se uvrstili v finale lepotnega tekmovanje Naj Smrkavec. Tako publiko kot žirijo si očaral s svojo lepoto ter opisom. Kateri izsek je izmišljen:",
+    "photos": [
+      "photos/PXL_20260610_193016574.jpg",
+      "photos/PXL_20260610_193127675.png"
+    ],
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
+        "answer": "Idealen kraj za preživljanje počitnic je na morju.",
+        "photos": [
+          "photos/IMG_20180623_162632.jpg"
+        ]
       },
       {
         "id": 2,
-        "answer": "Answer 2"
+        "answer": "Ko bom velik, bom igral odbojko.",
+        "photos": [
+          "photos/odbojka-ach-volley.png"
+        ]
       },
       {
         "id": 3,
-        "answer": "Answer 3",
+        "answer": "Držim se pravila: \"Bolje je dvakrat vprašati, kot enkrat preslišati.\"",
+        "photos": [
+          "photos/IMG_20180807_090558.jpg"
+        ],
         "isCorrect": true
       }
     ]
   },
   {
     "id": 5,
-    "topic": "Topic 5",
-    "question": "Question 5?",
-    "photo": "photos/photo-5.jpg",
+    "topic": "Pregorela varovalka",
+    "question": "Sicer nisi znan po naglih nenadzorovanih izbruhih jeze. Vendar se vseeno zgodi, tam pa tam, da ti odpre pokrov. Kaj se je zgodilo?:",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
+        "answer": "Kot kapetan si od sodnika zahteval, da izključi trenerja nasprotne ekipe.",
+        "photos": [
+          "photos/odb3.jpg"
+        ]
       },
       {
         "id": 2,
-        "answer": "Answer 2"
+        "answer": "Mami Ivanki si potrgal rože, ker te je non-stop pošiljala v trgovino po cigarete."
       },
       {
         "id": 3,
-        "answer": "Answer 3",
+        "answer": "Na potovanju si se skril, ker te je Urša peljala pogledat še \"40-to\" cerkev.",
+        "photos": [
+          "photos/1781124141987.jpg"
+        ],
         "isCorrect": true
       }
     ]
   },
   {
     "id": 6,
-    "topic": "Topic 6",
-    "question": "Question 6?",
-    "photo": "photos/photo-6.jpg",
+    "topic": "Izzivi življenja",
+    "question": "Tekom življenja si se znašel pred mnogo izzivi. Na tvoji poti so bdeli angeli varuhi in bližnji. Kdo od naštetih je odigral pomembno vlogo?:",
+    "photos": [
+      "photos/DSC03562.JPG"
+    ],
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
-      },
-      {
-        "id": 2,
-        "answer": "Answer 2",
+        "answer": "Cimri v Ljubljani",
+        "photos": [
+          "photos/IMG_20260610_214432.jpg",
+          "photos/IMG_20260610_214446.jpg"
+        ],
         "isCorrect": true
       },
       {
+        "id": 2,
+        "answer": "Mokronoška banda",
+        "photos": [
+          "photos/019.JPG"
+        ]
+      },
+      {
         "id": 3,
-        "answer": "Answer 3"
+        "answer": "Tvoj brat Marko",
+        "photos": [
+          "photos/PXL_20260611_201458202.jpg"
+        ]
       }
     ]
   },
   {
     "id": 7,
-    "topic": "Topic 7",
-    "question": "Question 7?",
-    "photo": "photos/photo-7.jpg",
+    "topic": "Družinsko veselje",
+    "question": "Nič ni lažjega kot...",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
+        "answer": "Hčerki nalakirati nohte.",
+        "photos": [
+          "photos/IMG_20200211_154826.jpg"
+        ]
       },
       {
         "id": 2,
-        "answer": "Answer 2",
-        "isCorrect": true
+        "answer": "Potelovaditi s fantoma.",
+        "photos": [
+          "photos/IMG_20180809_151636.png"
+        ]
       },
       {
         "id": 3,
-        "answer": "Answer 3"
+        "answer": "Zadovoljiti vse ženine želje - težji del je ugotoviti, katere so bile danes.",
+        "photos": [
+          "photos/IMG_20190406_151734.jpg"
+        ],
+        "isCorrect": true
       }
     ]
   },
   {
     "id": 8,
-    "topic": "Topic 8",
-    "question": "Question 8?",
-    "photo": "photos/photo-8.jpg",
+    "topic": "Karierne priložnosti",
+    "question": "Zaposlen si v uspešnem družinskem podjetju, specializiranim za promocijski material. Imaš pa nekaj izkušenj tudi v drugih poklicih in branžah. Kje si imel največ potenciala?",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
+        "answer": "Šofer - poklicni voznik, strokovnjak za upravljanje vozil",
+        "photos": [
+          "photos/DSC03414.JPG"
+        ]
       },
       {
         "id": 2,
-        "answer": "Answer 2"
+        "answer": "Frontman - glavni pevec, ki prevzame vlogo vodje banda",
+        "videos": [
+          "photos/VID_20240114_010021.mp4"
+        ],
+        "isCorrect": true
       },
       {
         "id": 3,
-        "answer": "Answer 3",
-        "isCorrect": true
+        "answer": "Barman - ekspert za pripravo pijač in koktajlov",
+        "photos": [
+          "photos/1781124249145.jpg",
+          "photos/16112008026.jpg"
+        ]
       }
     ]
   },
   {
     "id": 9,
-    "topic": "Topic 9",
-    "question": "Question 9?",
-    "photo": "photos/photo-9.jpg",
+    "topic": "Tema 9",
+    "question": "Vprašanje:",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
-      },
-      {
-        "id": 3,
-        "answer": "Answer 3"
+        "answer": "Odgovor 1"
       },
       {
         "id": 2,
-        "answer": "Answer 2",
-        "isCorrect": true
+        "answer": "Odgovor 2"
+      },
+      {
+        "id": 3,
+        "answer": "Odgovor 3"
       }
     ]
   }
