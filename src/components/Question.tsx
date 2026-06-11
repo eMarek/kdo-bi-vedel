@@ -214,7 +214,7 @@ class Question extends Component<QuestionProps, QuestionState> {
   render() {
     const { photoDisplayed, videoDisplayed } = this.state
     const { isClosedQuestion, selectedQuestion } = this.props
-    const { topic, question, answers, photos } = selectedQuestion
+    const { topic, question, answers, photos, videos } = selectedQuestion
     if (photoDisplayed) {
       return <PhotoFrameStyled onClick={this.closePhoto} backgroundImage={photoDisplayed}></PhotoFrameStyled>
     }
@@ -229,8 +229,11 @@ class Question extends Component<QuestionProps, QuestionState> {
       </BtnCloseStyled>
       <TopicStyled>
         {topic}
-        {photos?.map((photo, index) => <BtnPhotoStyled key={index} style={{marginLeft: "20px"}} onClick={(event) => this.togglePhoto(event, photo)}>
+        {photos?.map((photo, index) => <BtnPhotoStyled key={`photo-${index}`} style={{marginLeft: "20px"}} onClick={(event) => this.togglePhoto(event, photo)}>
           {photos.length === 1 ? "Slika" : `Slika ${index + 1}`}
+        </BtnPhotoStyled>)}
+        {videos?.map((video, index) => <BtnPhotoStyled key={`video-${index}`} style={{marginLeft: "20px"}} onClick={(event) => this.toggleVideo(event, video)}>
+          {videos.length === 1 ? "Video" : `Video ${index + 1}`}
         </BtnPhotoStyled>)}
       </TopicStyled>
       <hr />

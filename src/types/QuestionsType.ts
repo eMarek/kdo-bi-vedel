@@ -3,7 +3,8 @@ export type QuestionType = {
   topic: string,
   question: string,
   answers: Array<AnswerType>,
-  photos?: Array<string>
+  photos?: Array<string>,
+  videos?: Array<string>
 }
 
 export type AnswerType = {

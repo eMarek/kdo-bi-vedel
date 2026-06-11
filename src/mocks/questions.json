@@ -3,6 +3,9 @@
     "id": 1,
     "topic": "Popolna kombinacija",
     "question": "Recept za pravo zabavo sestavljajo lokacija, glasba in dobra družba, s katero kaj poješ, spiješ in zaplešeš. Po analizi \"Ministrstva za zabavo\" so popolna kombinacija:",
+    "videos": [
+      "photos/Željko Bebek - Kupit ću nam sat (Official music video) 480P.mp4"
+    ],
     "answers": [
       {
         "id": 1,
@@ -62,7 +65,7 @@
     "answers": [
       {
         "id": 1,
-        "answer": "Zaradi nošenja plavalne kape, ki je v Italiji obvezno"
+        "answer": "Zaradi nošenja plavalne kape, ki je v Italiji na bazenih obvezna"
       },
       {
         "id": 2,
@@ -81,7 +84,7 @@
   {
     "id": 4,
     "topic": "Naj smrkavec",
-    "question": "Le redki izbranci so se uvrstili v finale lepotnega tekmovanje Naj Smrkavec. Tako publiko kot žirijo si očaral s svojo lepoto ter opisom. Kateri izsek je izmišljen:",
+    "question": "Le redki izbranci so se uvrstili v finale lepotnega tekmovanje \"Naj smrkavec\". Tako publiko kot žirijo si očaral s svojo lepoto ter opisom. Kateri izsek je izmišljen:",
     "photos": [
       "photos/PXL_20260610_193016574.jpg",
       "photos/PXL_20260610_193127675.png"
@@ -98,7 +101,8 @@
         "id": 2,
         "answer": "Ko bom velik, bom igral odbojko.",
         "photos": [
-          "photos/odbojka-ach-volley.png"
+          "photos/odbojka-ach-volley.png",
+          "photos/odb2.jpg"
         ]
       },
       {
@@ -114,7 +118,7 @@
   {
     "id": 5,
     "topic": "Pregorela varovalka",
-    "question": "Sicer nisi znan po naglih nenadzorovanih izbruhih jeze. Vendar se vseeno zgodi, tam pa tam, da ti odpre pokrov. Kaj se je zgodilo?:",
+    "question": "Sicer nisi znan po naglih nenadzorovanih izbruhih jeze. Vendar se vseeno zgodi, tam pa tam, da ti odpre pokrov. Kaj se je zgodilo?",
     "answers": [
       {
         "id": 1,
@@ -140,7 +144,7 @@
   {
     "id": 6,
     "topic": "Izzivi življenja",
-    "question": "Tekom življenja si se znašel pred mnogo izzivi. Na tvoji poti so bdeli angeli varuhi in bližnji. Kdo od naštetih je odigral pomembno vlogo?:",
+    "question": "Tekom življenja si se znašel pred mnogo izzivi. Na tvoji poti so bdeli angeli varuhi in bližnji. Kdo od naštetih je odigral pomembno vlogo?",
     "photos": [
       "photos/DSC03562.JPG"
     ],
