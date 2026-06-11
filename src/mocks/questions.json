@@ -1,190 +1,239 @@
 [
   {
     "id": 1,
-    "topic": "Topic 1",
-    "question": "Question 1?",
-    "photo": "photos/photo-1.jpg",
+    "topic": "Modna pričeska",
+    "question": "V mladosti si poizkusil frizure različnih barv in oblik. Katera pričeska je imela največ potenciala pri osvajanju punc?",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1",
+        "answer": "Zlato-rjavkasto sračje gnezdo",
+        "photos": [
+          "photos/01-DSC03411.JPG"
+        ],
         "isCorrect": true
       },
       {
         "id": 2,
-        "answer": "Answer 2"
+        "answer": "Črna irokeza, tako imenovana žaga"
       },
       {
         "id": 3,
-        "answer": "Answer 3"
+        "answer": "Rdeča lasna linija",
+        "photos": [
+          "photos/Modna frizura.jpg"
+        ]
       }
     ]
   },
   {
     "id": 2,
-    "topic": "Topic 2",
-    "question": "Question 2?",
-    "photo": "photos/photo-2.jpg",
+    "topic": "Pustne šeme",
+    "question": "Največji uspeh maškar je bil dosežen leta 2014, ko smo kot Minioni zasedli najvišje mesto. Za pusta hrusta si imel vedno potencial. Pri dveh letih si bil našemljen kot:",
+    "photo": "photos/IMG_20140301_224520.jpg",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
+        "answer": "Računovodja - zadolžen za štetje krofov"
       },
       {
         "id": 2,
-        "answer": "Answer 2",
+        "answer": "Čebelica Maja - Maja, ki leti leti ♫",
+        "photos": [
+          "photos/Maškare 1988.jpg"
+        ],
         "isCorrect": true
       },
       {
         "id": 3,
-        "answer": "Answer 3"
+        "answer": "Batman - »I'm Batman!«",
+        "photos": [
+          "photos/Maškare, 1991.jpg"
+        ]
       }
     ]
   },
   {
     "id": 3,
-    "topic": "Topic 3",
-    "question": "Question 3?",
-    "photo": "photos/photo-3.jpg",
+    "topic": "Navijaška cona",
+    "question": "Slogan vsakega strastnega navijača je: \"Vroča glava, mrzlo pivo!\" Tudi ti si imel svoje vzornike, ki si jih podpiral na tak ali drugačen način. S katero pravilno trditvijo se najbolj poistovetiš?",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1",
-        "isCorrect": true
+        "answer": "Pri 10ih letih sem navijal za Dončić-eve Jezernike",
+        "photos": [
+          "photos/Vrsar, Lakers 2, l 1996.jpg"
+        ]
       },
       {
         "id": 2,
-        "answer": "Answer 2"
+        "answer": "Na morju sem nosil popoln outfit nemške nogometne reprezentance",
+        "photos": [
+          "photos/Vrsar, nogomet, 1996.jpg"
+        ],
+        "isCorrect": true
       },
       {
         "id": 3,
-        "answer": "Answer 3"
+        "answer": "Za potrebe smučanja sem posnel videospot za pesem CIK CAK",
+        "photos": [
+          "photos/IMG_8395.PNG"
+        ]
       }
     ]
   },
   {
     "id": 4,
-    "topic": "Topic 4",
-    "question": "Question 4?",
-    "photo": "photos/photo-4.jpg",
+    "topic": "Zgodnje otroštvo",
+    "question": "Kateri dogodek leta 1990 je po našem mnenju najbolj zaznamoval tvojo mladost?",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
+        "answer": "Izšel je film Sam doma"
       },
       {
         "id": 2,
-        "answer": "Answer 2"
+        "answer": "Razpad Jugoslavije"
       },
       {
         "id": 3,
-        "answer": "Answer 3",
+        "answer": "Dobil si bratca",
+        "photos": [
+          "photos/Marec, 1991.jpg"
+        ],
         "isCorrect": true
       }
     ]
   },
   {
     "id": 5,
-    "topic": "Topic 5",
-    "question": "Question 5?",
-    "photo": "photos/photo-5.jpg",
+    "topic": "Nagradno vprašanje",
+    "question": "Katero izmed naslednjih daril bi bilo zate najbolj primerno glede na tvoj okus, osebnost, potrebe, želje, način zabave?",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
+        "answer": "Striptizeta Jagoda – za nepozabno in drzno zabavo"
       },
       {
         "id": 2,
-        "answer": "Answer 2"
+        "answer": "Red Bull hladilnik – praktično darilo, ki poskrbi za energijo na vsakem beachvolley turnirju"
       },
       {
         "id": 3,
-        "answer": "Answer 3",
+        "answer": "Stand-up komik – za večer smeha in dobre volje s prijatelji",
         "isCorrect": true
       }
     ]
   },
   {
     "id": 6,
-    "topic": "Topic 6",
-    "question": "Question 6?",
-    "photo": "photos/photo-6.jpg",
+    "topic": "Kulinarični podvigi",
+    "question": "Vprašali smo 100 naključnih ljudi, katero jed Matic najbolje pripravi?",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
+        "answer": "Baby-ribs reberca v BBQ omaki",
+        "photos": [
+          "photos/rebrca.jpeg"
+        ]
       },
       {
         "id": 2,
-        "answer": "Answer 2",
-        "isCorrect": true
+        "answer": "Brisket"
       },
       {
         "id": 3,
-        "answer": "Answer 3"
+        "answer": "Goveji sočni steak na posteljici od rukolo",
+        "photos": [
+          "photos/PXL_20251230_131808360.jpg",
+          "photos/IMG_4216.jpeg"
+        ],
+        "isCorrect": true
       }
     ]
   },
   {
     "id": 7,
-    "topic": "Topic 7",
-    "question": "Question 7?",
-    "photo": "photos/photo-7.jpg",
+    "topic": "Odbojkarska kariera",
+    "question": "Dosegel si mnogo in še več. Izločitev favoriziranih domačinov na turnirju v Rovinju, 1. mesto na turnirju v Umagu, zmaga na beachvolley turnirju v Mokronogu. Kateri izmed naslednjih dogodkov je bil ključen za tvoj odbojkarski razvoj?",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
-      },
-      {
-        "id": 2,
-        "answer": "Answer 2",
+        "answer": "Odbojkarski turnir v Avstriji - nisi našel dvorane",
+        "photos": [
+          "photos/Einbahnstrasse.jpeg"
+        ],
         "isCorrect": true
       },
       {
+        "id": 2,
+        "answer": "Tekma starejših dečkov, Kočevje - zmaga 25:0",
+        "photos": [
+          "photos/Scan006.jpeg"
+        ]
+      },
+      {
         "id": 3,
-        "answer": "Answer 3"
+        "answer": "Odbojkarski tabor v Šiški - 7. razred",
+        "photos": [
+          "photos/Scan018.jpeg"
+        ]
       }
     ]
   },
   {
     "id": 8,
-    "topic": "Topic 8",
-    "question": "Question 8?",
-    "photo": "photos/photo-8.jpg",
+    "topic": "Prehranske navade",
+    "question": "Katera hrana absolutno ni primerna za tvojo prebavo?",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
+        "answer": "Rdeče sadje, predvsem jagode",
+        "photos": [
+          "photos/jagode.jpg"
+        ]
       },
       {
         "id": 2,
-        "answer": "Answer 2"
+        "answer": "Francoska solata",
+        "isCorrect": true
       },
       {
         "id": 3,
-        "answer": "Answer 3",
-        "isCorrect": true
+        "answer": "Wellington pečenka čudnih vonjav, tatarski biftek neprimerne barve, ...",
+        "photos": [
+          "photos/IMG_4278.jpeg"
+        ]
       }
     ]
   },
   {
     "id": 9,
-    "topic": "Topic 9",
-    "question": "Question 9?",
-    "photo": "photos/photo-9.jpg",
+    "topic": "Nerazviti potencial",
+    "question": "Odbojka je tvoja ljubica v športu. Preizkusil si se tudi v ostalih športih: smučanje, košarka, tenis, nogomet, tek... Šport je tvoj način življenja. Vendar pa enega talenta nisi razvil, katerega:",
     "answers": [
       {
         "id": 1,
-        "answer": "Answer 1"
-      },
-      {
-        "id": 3,
-        "answer": "Answer 3"
+        "answer": "Konjeništvo",
+        "photos": [
+          "photos/Matic 2 leti.jpg",
+          "photos/Jahanje, leta 1997.jpg"
+        ],
+        "isCorrect": true
       },
       {
         "id": 2,
-        "answer": "Answer 2",
-        "isCorrect": true
+        "answer": "Miselni športi - šah, poker, ...",
+        "photos": [
+          "photos/PXL_20240428_203031038.jpg",
+          "photos/PXL_20240430_221813302.jpg"
+        ]
+      },
+      {
+        "id": 3,
+        "answer": "Motociklizem",
+        "photos": [
+          "photos/Vrsar, 1996, motor.jpg"
+        ]
       }
     ]
   }
