@@ -109,6 +109,7 @@
         "id": 3,
         "answer": "Držim se pravila: \"Bolje je dvakrat vprašati, kot enkrat preslišati.\"",
         "photos": [
+          "photos/PXL_20260612_175444832.jpg",
           "photos/IMG_20180807_090558.jpg"
         ],
         "isCorrect": true
@@ -228,27 +229,38 @@
         "answer": "Barman - ekspert za pripravo pijač in koktajlov",
         "photos": [
           "photos/1781124249145.jpg",
-          "photos/16112008026.jpg"
+          "photos/ChatGPT Image Jun 13, 2026, 11_03_21 AM.png"
         ]
       }
     ]
   },
   {
     "id": 9,
-    "topic": "Tema 9",
-    "question": "Vprašanje:",
+    "topic": "20 let nazaj",
+    "question": "20 let nazaj je blo vse drugače:",
     "answers": [
       {
         "id": 1,
-        "answer": "Odgovor 1"
+        "answer": "Za rojstno-dnevno torto si moral protezo nataknit.",
+        "photos": [
+          "photos/DSC06482.JPG",
+          "photos/DSC06487.JPG"
+        ]
       },
       {
         "id": 2,
-        "answer": "Odgovor 2"
+        "answer": "Na morju si mislil na hribe.",
+        "photos": [
+          "photos/PIC_0195.JPG"
+        ],
+        "isCorrect": true
       },
       {
         "id": 3,
-        "answer": "Odgovor 3"
+        "answer": "Takrat te niso na skrivaj snemal.",
+        "videos": [
+          "photos/prdnu bom šenkrat.mp4"
+        ]
       }
     ]
   }
