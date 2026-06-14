@@ -220,7 +220,7 @@ class Question extends Component<QuestionProps, QuestionState> {
     }
     if (videoDisplayed) {
       return <VideoFrameStyled onClick={this.closeVideo}>
-        <video src={videoDisplayed} controls autoPlay />
+        <video src={videoDisplayed} controls autoPlay loop />
       </VideoFrameStyled>
     }
     return <SelectedQuestionStyled>
